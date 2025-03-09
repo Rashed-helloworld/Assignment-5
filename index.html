@@ -9,8 +9,23 @@
     <!-- Tailwind -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
-<body class="">
-    
+<body class="bg-blue-100 px-10 md:px-20 py-6">
+    <!-- Header Section -->
+    <header class="bg-white h-25 rounded-2xl p-6 flex justify-between">
+        <div class="flex items-center justify-between w-50">
+            <img class="w-12" src="assets/logo.png" alt="Logo">
+            <h1 class="text-3xl">Dev<b>Board</b></h1>
+        </div>
+        <div class="flex justify-between h-16 w-56">
+            <section class="flex items-center justify-evenly h-16 w-3/5 bg-blue-50 rounded-4xl">
+                <img class="w-8 h-8" src="assets/checkbox.png" alt="Checkbox">
+                <b class="text-3xl w-auto">23</b>
+            </section>
+            <section  class="flex items-center justify-center h-16 w-16 bg-blue-50 rounded-full">
+                <img src="assets/theme-btn.png" alt="Theme">
+            </section>
+        </div>
+    </header>
 
     <!-- JavaScript Code -->
     <script src="index.js"></script>
