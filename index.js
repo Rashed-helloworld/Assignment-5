@@ -1,18 +1,35 @@
 //toggle page
-let moveToQuestionPage = document.getElementById("to-question-page");
+const moveToQuestionPage = document.getElementById("to-question-page");
 moveToQuestionPage.addEventListener('click', function(){
     window.location.href = "questionPage.html";
 })
 //date adding
-let date = document.getElementById('current-date');
+const date = document.getElementById('current-date');
 const today = new Date();
-const f = new Intl.DateTimeFormat(('en-us'), {
+const currentTime = new Intl.DateTimeFormat(('en-us'), {
     dateStyle: "full",
 })
-date.textContent = f.format(today);
+date.textContent = currentTime.format(today);
 //BG change
-let bgChangeButton = document.getElementById('bg-btn');
+const bgChangeButton = document.getElementById('bg-btn');
 bgChangeButton.addEventListener('click', function(){
     const hexVal = Math.floor(Math.random() * 0xffffff).toString(16);
     document.body.style.background = `#${hexVal}`;
 })
+//Complete button functionality
+let completeBtn = document.querySelectorAll(".complete-btn");
+function mainTask() {
+    //alert
+    alert('Board Updated Successfully!');
+    //task assigned decreases
+    const totalTask = document.getElementById('total-task');
+    let totalTaskValue = totalTask.textContent;
+    totalTask.textContent = `0${totalTaskValue -= 1}`
+    //header Task increases
+    let headerTask = document.getElementById('header-task');
+    headerTask.innerText++;
+    //Activity Log updation
+    
+
+}
+mainTask();
