@@ -17,7 +17,7 @@ bgChangeButton.addEventListener('click', function(){
     document.body.style.background = `#${hexVal}`;
 })
 //Complete button functionality
-let completeBtn = document.querySelectorAll(".complete-btn");
+let completeBtn = document.getElementById("complete-btn1");
 function mainTask() {
     //alert
     alert('Board Updated Successfully!');
@@ -28,8 +28,13 @@ function mainTask() {
     //header Task increases
     let headerTask = document.getElementById('header-task');
     headerTask.innerText++;
-    //Activity Log updation
-    
-
+    //Activity Log updation, I added title class to all card titles
+    const title1 = document.getElementById("title1");
+    let title = title1.innerText;
+    let container = document.getElementById('container');
+    const newP = document.createElement('p');
+    console.log(title);
+    newP.textContent = `You have completed the task ${title} at ${today.getHours()}:${today.getMinutes()}`;
+    container.append(newP);
 }
 mainTask();
