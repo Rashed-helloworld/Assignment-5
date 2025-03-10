@@ -31,7 +31,7 @@ completeBtn1.addEventListener("click", function () {
   const title1 = document.getElementById("title1");
   let title = title1.innerText;
   const newP = document.createElement("p");
-  newP.textContent = `You have completed the task '${title}' at ${today.getHours()}:${today.getMinutes()}`;
+  newP.textContent = `You have completed the task '${title}' at ${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
   container.append(newP);
   alert("Board Updated Successfully!");
 });
@@ -48,7 +48,7 @@ completeBtn2.addEventListener("click", function () {
   const title1 = document.getElementById("title2");
   let title = title1.innerText;
   const newP = document.createElement("p");
-  newP.textContent = `You have completed the task '${title}' at ${today.getHours()}:${today.getMinutes()}`;
+  newP.textContent = `You have completed the task '${title}' at ${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
   container.append(newP);
   alert("Board Updated Successfully!");
 });
@@ -66,7 +66,7 @@ completeBtn3.addEventListener("click", function () {
   const title1 = document.getElementById("title3");
   let title = title1.innerText;
   const newP = document.createElement("p");
-  newP.textContent = `You have completed the task '${title}' at ${today.getHours()}:${today.getMinutes()}`;
+  newP.textContent = `You have completed the task '${title}' at ${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
   container.append(newP);
 });
 
@@ -83,7 +83,7 @@ completeBtn4.addEventListener("click", function () {
   const title1 = document.getElementById("title4");
   let title = title1.innerText;
   const newP = document.createElement("p");
-  newP.textContent = `You have completed the task '${title}' at ${today.getHours()}:${today.getMinutes()}`;
+  newP.textContent = `You have completed the task '${title}' at ${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
   container.append(newP);
 });
 
@@ -100,7 +100,7 @@ completeBtn5.addEventListener("click", function () {
   const title1 = document.getElementById("title5");
   let title = title1.innerText;
   const newP = document.createElement("p");
-  newP.textContent = `You have completed the task '${title}' at ${today.getHours()}:${today.getMinutes()}`;
+  newP.textContent = `You have completed the task '${title}' at ${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
   container.append(newP);
 });
 
@@ -117,7 +117,7 @@ completeBtn6.addEventListener("click", function () {
   const title1 = document.getElementById("title6");
   let title = title1.innerText;
   const newP = document.createElement("p");
-  newP.textContent = `You have completed the task '${title}' at ${today.getHours()}:${today.getMinutes()}`;
+  newP.textContent = `You have completed the task '${title}' at ${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
   container.append(newP);
 });
 
