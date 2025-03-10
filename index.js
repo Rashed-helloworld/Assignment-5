@@ -139,5 +139,3 @@ clearBtn.addEventListener('click', function(){
     completeBtn6.disabled = false;
     completeBtn6.style.backgroundColor = "#2248e7";
 })
-
-//Final alert
